@@ -1,7 +1,4 @@
-import { Application } from "pixi.js";
-const app = new Application({
-  width: 500,
-  height: 500,
-});
-
-document.body.appendChild(app.view);
+import App from "./App.vue";
+import { game } from "./game-pixi";
+import { createApp } from "./runtime-pixi";
+createApp(App).mount(game.stage);
